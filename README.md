@@ -1,6 +1,5 @@
 # unicompare
 
-![GitHub](https://img.shields.io/github/license/zetawave/unicompare)
 ![npm](https://img.shields.io/npm/v/unicompare)
 
 Universal comparator for javascript with recursive and deep support
