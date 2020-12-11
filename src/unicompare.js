@@ -5,5 +5,5 @@
  * @param {Boolean} deep -> Deep compare
  */
 exports.objEqual = function(obj1, obj2, deep){
-    
+    //TODO
 }

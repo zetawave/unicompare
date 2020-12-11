@@ -17,7 +17,7 @@
     "deepequal"
   ],
   "author": "Zetawave",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zetawave/unicompare/issues"
   },
