@@ -1,6 +1,6 @@
 {
   "name": "unicompare",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Universal comparator for javascript with recursive and deep support",
   "main": "./src/unicompare.js",
   "scripts": {
