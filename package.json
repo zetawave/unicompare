@@ -1,0 +1,25 @@
+{
+  "name": "unicompare",
+  "version": "1.0.1",
+  "description": "Universal comparator for javascript with recursive and deep support",
+  "main": "./src/unicompare.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetawave/unicompare.git"
+  },
+  "keywords": [
+    "unicompare",
+    "comparator",
+    "equal",
+    "deepequal"
+  ],
+  "author": "Zetawave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zetawave/unicompare/issues"
+  },
+  "homepage": "https://github.com/zetawave/unicompare#readme"
+}
