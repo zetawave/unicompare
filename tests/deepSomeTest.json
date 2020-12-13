@@ -1,12 +1,38 @@
 {
-    "type":{
-        "test":[1,4,5]
+    "type": {
+        "test": [
+            1,
+            4,
+            5
+        ]
     },
-    "test1":{
-        "child":{
-            "child2":[1,2,3,{
-                "childInsideArrayThatIWantoToFind":[1,2,3]
-            }]
+    "test1": {
+        "child": {
+            "child2": [
+                1,
+                2,
+                3,
+                {
+                    "childInsideArrayThatIWantoToFind": [
+                        1,
+                        2,
+                        4
+                    ]
+                }
+            ]
         }
+    },
+    "test2": {
+        "a": [
+            "a",
+            [
+                999,
+                [
+                    {
+                        "here": [1,2,3]
+                    }
+                ]
+            ]
+        ]
     }
 }

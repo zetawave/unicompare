@@ -26,10 +26,7 @@ const some = (rootObj, v) => {
     if (!rootObj) { throw Error("[ERROR] - rootObj is not defined") }
     shared.debug('[*] - obj1 is ok')
     let some = false
-    let values = !(rootObj instanceof Array) &&
-        typeof rootObj === 'object'
-        ? Object.values(rootObj)
-        : rootObj
+    let values = !(rootObj instanceof Array) && typeof rootObj === 'object' ? Object.values(rootObj) : rootObj
 
     if (values === null) { throw new Error('[Error] - invalid obj type') }
 
@@ -43,10 +40,7 @@ const some = (rootObj, v) => {
 const someInsideSome = (obj, v) => {
 
     if (shared.stringify(obj) === shared.stringify(v)) { return true }
-    let values = !(obj instanceof Array) &&
-        typeof obj === 'object'
-        ? Object.values(obj)
-        : obj
+    let values = !(obj instanceof Array) && typeof obj === 'object' ? Object.values(obj) : obj
 
     if (values === null) { throw new Error('[Error] - invalid obj type') }
 
