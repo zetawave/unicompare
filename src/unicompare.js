@@ -1,5 +1,8 @@
 const shared = require('./shared')
 
+var KEY = 'key'
+var VALUE = 'value'
+
 /**
  * Compare two objects, any difference interrupts the check
  * @param {Object} obj1 -> First object
@@ -9,6 +12,18 @@ const shared = require('./shared')
 
 exports.objEqual = function (obj1, obj2, deep) {
     return objEqual(obj1, obj2, deep, false)
+}
+
+/**
+ * Search recursively inside a object (KEY/VALUE) if there is a value === v
+ * @param {Object} rootObj -> Object where to search
+ * @param {any} v -> Value to search
+ * @param {String} type -> Type of the value to match (Key of a property or Value of a property)
+ */
+
+exports.some = function (rootObj, v, type)
+{
+    //TODO
 }
 
 /**
