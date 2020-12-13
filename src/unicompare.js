@@ -17,7 +17,6 @@ exports.objEqual = function (obj1, obj2, deep) {
  * @param {*} obj2 -> Second object
  * @param {*} deep -> deep equal
  * @param {*} over -> avoid null object check
- * @param {*} v    -> verbose log
  */
 const objEqual = (obj1, obj2, deep, over) => {
 
