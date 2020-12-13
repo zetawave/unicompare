@@ -5,7 +5,8 @@
   "main": "./src/unicompare.js",
   "scripts": {
     "test": "node ./tests/test.js",
-    "deploy":"npm publish"
+    "deploy":"npm publish",
+    "deploy-readme":"npm publish --update-readme"
   },
   "repository": {
     "type": "git",
