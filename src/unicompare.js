@@ -12,6 +12,52 @@ exports.objEqual = function (obj1, obj2, deep) {
 }
 
 /**
+ * Search recursively inside a object if there is a value === v
+ * @param {Object} rootObj -> Object where to search
+ * @param {any} v -> Value to search
+ * @param {String} type -> Type of the value to match (Key of a property or Value of a property)
+ */
+
+exports.some = function (rootObj, v) {
+    return some(rootObj, v)
+}
+
+const some = (rootObj, v) => {
+    if (!rootObj) { throw Error("[ERROR] - rootObj is not defined") }
+    shared.debug('[*] - obj1 is ok')
+    let some = false
+    let values = !(rootObj instanceof Array) &&
+        typeof rootObj === 'object'
+        ? Object.values(rootObj)
+        : rootObj
+
+    if (values === null) { throw new Error('[Error] - invalid obj type') }
+
+    if (shared.stringify(values) === shared.stringify(v)) { return true }
+    for (let i = 0; i < values.length; i++) {
+        if (some = someInsideSome(values[i], v)) { break }
+    }
+    return some
+}
+
+const someInsideSome = (obj, v) => {
+
+    if (shared.stringify(obj) === shared.stringify(v)) { return true }
+    let values = !(obj instanceof Array) &&
+        typeof obj === 'object'
+        ? Object.values(obj)
+        : obj
+
+    if (values === null) { throw new Error('[Error] - invalid obj type') }
+
+    for (let i = 0; i < values.length; i++) {
+        if (shared.stringify(values[i]) === shared.stringify(v)) { return true }
+        if (typeof values[i] === 'object' && someInsideSome(values[i], v)) { return true }
+    }
+    return false
+}
+
+/**
  * 
  * @param {*} obj1 -> First object 
  * @param {*} obj2 -> Second object

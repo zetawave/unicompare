@@ -1,0 +1,12 @@
+{
+    "type":{
+        "test":[1,4,5]
+    },
+    "test1":{
+        "child":{
+            "child2":[1,2,3,{
+                "childInsideArrayThatIWantoToFind":[1,2,3]
+            }]
+        }
+    }
+}

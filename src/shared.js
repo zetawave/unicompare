@@ -11,3 +11,7 @@ exports.error = function(text) {
 exports.debug = function(text) {
     if (verbose) { console.debug(text) }
 }
+
+exports.stringify = function(v) {
+    return JSON.stringify(v)
+}
