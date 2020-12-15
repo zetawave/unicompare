@@ -13,3 +13,5 @@ console.log("[ objEqual ] TEST different objects without deep ] are equal : ", u
 console.log("")
 console.log("[ some ] TEST an object that contains the array i want to find: ", unicompare.some({test:[1,2,3]}, [1,2,3]))
 console.log("[ some ] TEST an object that contains the array i want to find ( ULTRA DEEP TEST ): ", unicompare.some(deepSomeTest, [1,2,3]))
+console.log("[ some ] TEST an object that not contains the array i want to find: ", unicompare.some({test:[1,2,3]}, [1,2,3,4]))
+console.log("[ some ] TEST an object that not contains the array i want to find ( ULTRA DEEP TEST ): ", unicompare.some(deepSomeTest, [1,2,3,'s']))
