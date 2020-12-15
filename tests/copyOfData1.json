@@ -1,11 +1,16 @@
 {
-    "name":"John",
-    "age":30,
-    "cars": {
-      "car1":"Ford",
-      "car2":"BMW",
-      "car3":"Fiat"
-    },
-    "house":null,
-    "cards":[1,2,"c1","c2"]
-   }
+  "name": "John",
+  "age": 30,
+  "cars": {
+    "car1": "Ford",
+    "car2": "BMW",
+    "car3": "Fiat"
+  },
+  "house": null,
+  "cards": [
+    1,
+    2,
+    "c1",
+    "c2"
+  ]
+}
