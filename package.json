@@ -3,6 +3,7 @@
   "version": "1.0.5",
   "description": "Universal comparator for javascript with recursive and deep support",
   "main": "./src/unicompare.js",
+  "types": "./src/unicompare.d.ts",
   "scripts": {
     "test": "node ./tests/test.js",
     "deploy":"npm publish",
@@ -11,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zetawave/unicompare.git"
+  },
+  "dependencies": {
+    "typescript": "next"
   },
   "keywords": [
     "unicompare",
