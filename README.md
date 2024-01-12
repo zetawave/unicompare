@@ -1,4 +1,4 @@
-# unicompare
+# unicompare (DISCONTINUED)
 
 ![npm](https://img.shields.io/npm/v/unicompare)
 
