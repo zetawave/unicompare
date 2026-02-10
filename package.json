@@ -1,13 +1,13 @@
 {
   "name": "unicompare",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Universal comparator for javascript with recursive and deep support",
   "main": "./src/unicompare.js",
   "types": "./src/unicompare.d.ts",
   "scripts": {
     "test": "node ./tests/test.js",
-    "deploy":"npm publish",
-    "deploy-readme":"npm publish --update-readme"
+    "deploy": "npm publish",
+    "deploy-readme": "npm publish --update-readme"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,5 @@
     "url": "https://github.com/zetawave/unicompare/issues"
   },
   "homepage": "https://github.com/zetawave/unicompare#readme",
-  "readme":"README.md"
+  "readme": "README.md"
 }
